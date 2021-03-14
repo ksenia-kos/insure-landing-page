@@ -108,8 +108,13 @@ a {
     background-color: #fff;
 }
 
-.content-wrapper {
+.container-margin {
     margin: 0 6.4%;
+}
+
+.container-padding {
+    padding-left: 6.4%;
+    padding-right: 6.4%;
 }
 
 /*-------------------- HEADER --------------------*/
@@ -121,6 +126,7 @@ header {
     justify-content: space-between;
     position: relative;
     background-color: #fff;
+    z-index: 3;
 }
 
 .header-menu {
@@ -210,7 +216,8 @@ header {
     top: 355px;
 }
 
-.pattern-desktop {
+.pattern-desktop-left,
+.pattern-desktop-right {
     display: none;
 }
 
@@ -313,9 +320,14 @@ footer {
         margin-top: 50px;
     }
 
-    .content-wrapper {
+    .container-margin {
         margin-left: 8%;
         margin-right: 8%;
+    }
+
+    .container-padding {
+        padding-left: 8%;
+        padding-right: 8%;
     }
 
     /*-------------------- HEADER --------------------*/
@@ -365,9 +377,7 @@ footer {
     /*-------------------- HERO --------------------*/
 
     .hero {
-        background: var(--dark-violet) url('../images/bg-pattern-intro-right-desktop.svg') no-repeat;
-        background-position: top right;
-        background-size: auto 90%;
+        background-color: var(--dark-violet);
         padding-top: 70px;
         padding-bottom: 70px;
         position: relative;
@@ -403,7 +413,14 @@ footer {
         display: none;
     }
 
-    .pattern-desktop {
+    .pattern-desktop-right {
+        display: block;
+        position: absolute;
+        top: -80px;
+        right: 0;
+    }
+
+    .pattern-desktop-left {
         display: block;
         position: absolute;
         top: 430px;
@@ -412,7 +429,7 @@ footer {
     /*-------------------- FEATURES --------------------*/
 
     .features-line {
-        margin: 0 auto 100px 0;
+        margin: 0 auto 65px 0;
     }
 
     .features-items {
@@ -502,9 +519,14 @@ footer {
         font-size: 1.75rem;
     }
 
-    .content-wrapper {
+    .container-margin {
         margin-left: 11%;
         margin-right: 11%;
+    }
+
+    .container-padding {
+        padding-left: 11%;
+        padding-right: 11%;
     }
 
     /*-------------------- HEADER --------------------*/
