@@ -413,13 +413,6 @@ footer {
         display: none;
     }
 
-    .pattern-desktop-right {
-        display: block;
-        position: absolute;
-        top: -80px;
-        right: 0;
-    }
-
     .pattern-desktop-left {
         display: block;
         position: absolute;
@@ -546,6 +539,13 @@ footer {
     .hero-image {
         height: 650px;
         max-width: 540px;
+    }
+
+    .pattern-desktop-right {
+        display: block;
+        position: absolute;
+        top: -80px;
+        right: 0;
     }
 
     /*-------------------- FEATURES --------------------*/
